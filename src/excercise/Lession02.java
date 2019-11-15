@@ -1,4 +1,4 @@
-package lession1;
+package excercise;
 
 import static org.testng.AssertJUnit.assertEquals;
 import org.testng.annotations.AfterClass;

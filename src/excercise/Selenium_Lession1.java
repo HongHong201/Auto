@@ -1,4 +1,4 @@
-package lession1;
+package excercise;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
