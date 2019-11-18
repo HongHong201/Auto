@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -16,6 +17,7 @@ import org.testng.annotations.Test;
 
 public class TC06 {
 	WebDriver driver;
+	
 
 	@BeforeClass
 	public void beforeClass() {
@@ -29,6 +31,7 @@ public class TC06 {
 		 */
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
+	String randomEmail= "hong" + random() + "@gmail.com";
 	@Test
 	public void TC6() {
 		String ho= "Nguyen Thi";
@@ -47,7 +50,7 @@ public class TC06 {
 		lasttName.sendKeys(ten);
 		// email
 		WebElement email = driver.findElement(By.xpath("//input[@id='email_address']"));
-		email.sendKeys("hong" + random() + "@gmail.com");
+		email.sendKeys(randomEmail);
 		// pass
 		WebElement pass = driver.findElement(By.xpath("//input[@id='password']"));
 		pass.sendKeys("Hong123@@");
@@ -65,6 +68,7 @@ public class TC06 {
 		driver.findElement(By.xpath("//a[@title='Log Out']")).click();
 		String url = driver.getCurrentUrl();
 		assertEquals(url,"http://live.demoguru99.com/index.php/customer/account/logoutSuccess/");
+		
 	}
 
 	public int random() {

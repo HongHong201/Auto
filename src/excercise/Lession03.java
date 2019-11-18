@@ -2,6 +2,7 @@ package excercise;
 
 import static org.testng.AssertJUnit.assertEquals;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
@@ -56,6 +57,8 @@ public class Lession03{
 		String correctName = driver.findElement(By.xpath("//p[@class='welcome-msg']")).getText();
 		System.out.println(correctName);
 		correctName.contentEquals("WELCOME");
+		
+		//Assert.assertTrue(correctName.contains("welcome"));
 	}
 
 
