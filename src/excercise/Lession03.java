@@ -2,7 +2,6 @@ package excercise;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;

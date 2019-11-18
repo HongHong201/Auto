@@ -131,7 +131,7 @@ public class Lession04 {
 			System.out.println("[Interest disable] element is disabled ");
 		else
 			System.out.println("[Interest disable] element is enabled ");
-
+//
 		// check slider02
 		Assert.assertFalse(slider02.isEnabled());
 		if (!slider02.isEnabled())
