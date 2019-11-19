@@ -160,6 +160,6 @@ public class Lession04 {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.quit();
+		 driver.quit();
 	}
 }
