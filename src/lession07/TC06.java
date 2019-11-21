@@ -32,7 +32,7 @@ public class TC06 extends Common{
 	}
 
 	@Test
-	public void testCase04() {
+	public void testCase06() {
 		//click [Click for JS Alert] btn
 		WebElement btn= driver.findElement(By.xpath("//button[contains(text(),'Click for JS Prompt')]"));
 		clickElement(btn,driver);

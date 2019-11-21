@@ -31,7 +31,7 @@ public class TC05 extends Common{
 	}
 
 	@Test
-	public void testCase04() {
+	public void testCase05() {
 		//click [Click for JS Alert] btn
 		WebElement btn= driver.findElement(By.xpath("//button[contains(text(),'Click for JS Confirm')]"));
 		clickElement(btn,driver);
